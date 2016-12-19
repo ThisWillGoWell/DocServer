@@ -1,0 +1,178 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,700,900,400italic,700italic);
+* {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-transition: all ease-in-out 0.17s;
+  -o-transition: all ease-in-out 0.17s;
+  -webkit-transition: all ease-in-out 0.17s;
+  transition: all ease-in-out 0.17s;
+}
+*:focus {
+  outline: 0 !important;
+}
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none !important;
+}
+html,
+body {
+  font-family: 'Lato', 'Open sans', 'montserrat', sans-serif !important;
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: text;
+  background-color: #607D8B;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.inset-shadow-lg {
+  box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.6) inset;
+}
+.no-padding-left {
+  padding-left: 0 !important;
+}
+.transition-all-fast {
+  -moz-transition: all ease-in-out 0.17s;
+  -o-transition: all ease-in-out 0.17s;
+  -webkit-transition: all ease-in-out 0.17s;
+  transition: all ease-in-out 0.17s;
+}
+.transition-all-quick {
+  -moz-transition: all ease-in-out 0.1s;
+  -o-transition: all ease-in-out 0.1s;
+  -webkit-transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.1s;
+}
+.transition-all-speedy {
+  -moz-transition: all ease-in-out 0.03s;
+  -o-transition: all ease-in-out 0.03s;
+  -webkit-transition: all ease-in-out 0.03s;
+  transition: all ease-in-out 0.03s;
+}
+.transition-all-bez-normal {
+  -moz-transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.bot-shadow {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.button {
+  height: 50px;
+  width: 180px;
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 49px;
+  cursor: pointer;
+  opacity: 0.8;
+  font-size: 20px;
+  margin: 0 auto 15px auto;
+}
+.button.btn-increment {
+  background-color: #66BB6A;
+}
+.button.btn-reset {
+  background-color: #ef5350;
+}
+.button:hover {
+  opacity: 1;
+}
+
+/* HEADER */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 65px;
+  z-index: 10;
+}
+
+header h1 {
+  color: #4d4d4d;
+  font-size: 20px;
+}
+
+#content {
+  display: block;
+  padding-top: 130px;
+  height: 100%;
+}
+
+#content h2{
+    color: #fff;
+
+}
+
+#dialogue-container {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  padding:15px 25px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#dialogue-container h3{
+
+}
+
+.project-category {
+  border-bottom: 2px solid #4d4d4d;
+}
+
+#dialogue-container ul{
+  padding-top: 15px;
+  list-style-type: none;
+}
+
+#dialogue-container ul li{
+  height: 35px;
+  width: 100%;
+  background-color: #E0E0E0;
+  border-left: 2px solid #8BC34A;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-transition: border ease-in-out 0.1s, padding-left ease-in-out 0.17s;
+  -o-transition: border ease-in-out 0.1s, padding-left ease-in-out 0.17s;
+  -webkit-transition: border ease-in-out 0.1s, padding-left ease-in-out 0.17s;
+  transition: border ease-in-out 0.1s, padding-left ease-in-out 0.17s;
+
+
+}
+
+#dialogue-container ul li:hover{
+  height: 35px;
+  width: 100%;
+  background-color: #E9E9E9;
+  border-left: 5px solid #8BC34A;
+  padding-left: 25px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#dialogue-container ul li a{
+  height: 35px;
+  width: 100%;
+  color: #4d4d4d;
+  line-height: 33px;
+}
